@@ -72,6 +72,37 @@ body {
   }
 }
 
+// TEAMS----
+
+.teams-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 48px;
+
+  .teamNames {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 93%;
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 12px 0;
+      line-height: 32px;
+      color: #1e2532;
+    }
+  }
+}
+
 // FOOTER----
 .footer-container {
   width: 90%;
