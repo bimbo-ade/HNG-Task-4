@@ -10,13 +10,13 @@ const Navbar = () => {
         <ul>
           <li>Home</li>
           <li className="link-arrow">
-            Terms <img src={arrowdown} alt="" width={20} />
+            Teams <img src={arrowdown} alt="" width={20} />
           </li>
           <li>FAQ's</li>
           <li>About HNG</li>
         </ul>
         <div className="search">
-          <img src={search} alt="" width={20} />
+          <img src={search} alt="" width={24} />
 
           <input
             type="text"

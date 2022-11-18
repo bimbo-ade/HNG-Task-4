@@ -1,6 +1,7 @@
 body {
   font-family: "Manrope", sans-serif;
 }
+// NAVBAR----
 
 .navbar-container {
   width: 90%;
@@ -30,10 +31,12 @@ body {
       line-height: 32px;
       color: #1e2532;
     }
+
     .link-arrow {
       display: flex;
       justify-content: center;
       align-items: center;
+
       img {
         margin-left: 8px;
       }
@@ -66,5 +69,59 @@ body {
         color: #c5c5c5;
       }
     }
+  }
+}
+
+// FOOTER----
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  padding-top: 20px;
+  border-top: 1px solid #d3cece;
+
+  .copyright {
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: #1e2532;
+      opacity: 0.5;
+      span {
+        font-size: 22px;
+        color: black;
+        margin-right: 2px;
+      }
+    }
+  }
+  .language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-right: 8px;
+    }
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: #1e2532;
+      opacity: 0.5;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
   }
 }
