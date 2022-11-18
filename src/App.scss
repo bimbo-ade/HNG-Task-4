@@ -1,0 +1,70 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.navbar-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  .navlinks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 0 20px;
+      text-decoration: none;
+      list-style: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: #1e2532;
+    }
+    .link-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-left: 8px;
+      }
+    }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    width: 356px;
+    height: 44px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    margin-left: 48px;
+
+    img {
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+    input {
+      width: 326px;
+      outline: none;
+      border: none;
+      background-color: transparent;
+
+      &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #c5c5c5;
+      }
+    }
+  }
+}

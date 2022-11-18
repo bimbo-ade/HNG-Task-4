@@ -1,7 +1,12 @@
 import "./App.scss";
+import FAQ from "./pages/FAQ";
 
 function App() {
-  return <div className="App">hello</div>;
+  return (
+    <div>
+      <FAQ />
+    </div>
+  );
 }
 
 export default App;
