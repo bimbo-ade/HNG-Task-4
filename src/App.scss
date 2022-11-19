@@ -193,6 +193,9 @@ body {
         font-size: 16px;
         line-height: 32px;
         color: #1e2532;
+        @media (min-width: 320px) and (max-width: 768px) {
+          font-size: 14px;
+        }
       }
     }
 

@@ -30,9 +30,9 @@ const Questions = () => {
               <div className="question-title " onClick={() => toggle(i)}>
                 <h3>{items.Question}</h3>
                 {open === i ? (
-                  <img src={arrowdown} alt="" width={20} />
-                ) : (
                   <img src={arrowup} alt="" width={20} />
+                ) : (
+                  <img src={arrowdown} alt="" width={20} />
                 )}
               </div>
               <div
