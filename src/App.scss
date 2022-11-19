@@ -11,7 +11,11 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-
+  .logo {
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 100px;
+    }
+  }
   .navlinks-container {
     display: flex;
     justify-content: center;
@@ -157,6 +161,8 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 16px;
 
@@ -164,10 +170,16 @@ body {
       width: 100%;
     }
 
+    @media (min-width: 769px) and (max-width: 1024px) {
+      width: 100%;
+    }
     .question-item {
-      width: 500px;
+      width: 700px;
       background: #eff2f9;
       border-radius: 4px;
+      @media (min-width: 769px) and (max-width: 1024px) {
+        width: 100%;
+      }
     }
     .question-title {
       display: flex;
@@ -199,7 +211,7 @@ body {
       }
     }
     .active {
-      height: 100px;
+      height: 150px;
     }
   }
 }
@@ -209,24 +221,18 @@ body {
 .teams-container {
   width: 90%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 20% 80%;
+  display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 48px;
+  padding: 20px;
 
-  .teamNames {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap: wrap;
-    max-width: 93%;
-    @media (min-width: 320px) and (max-width: 768px) {
-      width: 100%;
-    }
+  @media (min-width: 320px) and (max-width: 768px) {
   }
+
   ul {
     padding: 0;
+    width: 150px;
     li {
       list-style: none;
       font-style: normal;
@@ -253,7 +259,10 @@ body {
   padding-bottom: 24px;
   border-top: 1px solid #d3cece;
 
-  @media (min-width: 320px) and (max-width: 768px) {
+  .logo {
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 100px;
+    }
   }
   .copyright {
     p {
@@ -263,6 +272,7 @@ body {
       line-height: 32px;
       color: #1e2532;
       opacity: 0.5;
+
       span {
         font-size: 22px;
         color: black;

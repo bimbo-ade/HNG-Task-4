@@ -6,7 +6,7 @@ import search from "../assets/images/searchIcon.png";
 const Navbar = () => {
   return (
     <div className="navbar-container">
-      <img src={logo} alt="" width={130} />
+      <img src={logo} alt="" width={130} className="logo" />
       <div className="navlinks-container">
         <ul>
           <li>Home</li>

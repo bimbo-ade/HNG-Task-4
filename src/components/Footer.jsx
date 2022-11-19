@@ -7,7 +7,7 @@ import global from "../assets/images/global.png";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <img src={logo} alt="logo" width={130} />
+      <img src={logo} alt="logo" width={130} className="logo" />
       <div className="copyright">
         <p>
           {" "}
