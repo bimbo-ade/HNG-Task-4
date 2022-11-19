@@ -18,6 +18,9 @@ export const data = [
     Question: " How long is the internship?",
     Answer: " About 7 weeks",
   },
+];
+
+export const data2 = [
   {
     Question: " Will mentors be available for physical mentorship?",
     Answer:

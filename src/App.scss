@@ -130,6 +130,16 @@ body {
       line-height: 32px;
     }
   }
+
+  .question-item-container {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 48px;
+  }
 }
 
 // TEAMS----
