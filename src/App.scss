@@ -45,10 +45,25 @@ body {
       display: none;
     }
   }
+  .menu {
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      display: none;
+      margin-left: 16px;
+      @media (min-width: 320px) and (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
   .search {
     display: flex;
     align-items: center;
-    width: 356px;
+    width: auto;
     height: 44px;
     border: 1px solid #dcdcdc;
     border-radius: 8px;
@@ -73,6 +88,9 @@ body {
       }
     }
     @media (min-width: 320px) and (max-width: 768px) {
+      display: none;
+    }
+    @media (min-width: 769px) and (max-width: 1023px) {
       display: none;
     }
   }
@@ -115,7 +133,7 @@ body {
     @media (min-width: 320px) and (max-width: 768px) {
       font-size: 32px;
       margin: 0;
-      line-height: 48px;
+      line-height: 40px;
     }
   }
 
@@ -124,20 +142,27 @@ body {
     font-size: 20px;
     line-height: 32px;
     color: #1e2532;
+    margin-bottom: 72px;
 
     @media (min-width: 320px) and (max-width: 768px) {
       font-size: 16px;
       line-height: 32px;
+
+      margin-bottom: 64px;
     }
   }
 
   .question-item-container {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 16px;
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 100%;
+    }
 
     .question-item {
       width: 500px;
@@ -158,11 +183,13 @@ body {
         color: #1e2532;
       }
     }
+
     .question-content {
       position: relative;
       height: 0;
       overflow: hidden;
       transition: 0.4s;
+
       p {
         font-weight: 400;
         font-size: 14px;
@@ -192,7 +219,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: start;
+    flex-wrap: wrap;
     max-width: 93%;
+    @media (min-width: 320px) and (max-width: 768px) {
+      width: 100%;
+    }
   }
   ul {
     padding: 0;
@@ -216,10 +247,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   height: 88px;
   padding-top: 20px;
+  padding-bottom: 24px;
   border-top: 1px solid #d3cece;
 
+  @media (min-width: 320px) and (max-width: 768px) {
+  }
   .copyright {
     p {
       font-style: normal;

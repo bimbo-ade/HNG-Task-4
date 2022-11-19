@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/images/Logo.png";
+import menu from "../assets/images/menu.png";
 import arrowdown from "../assets/images/arrow-down.png";
 import search from "../assets/images/searchIcon.png";
 const Navbar = () => {
@@ -15,6 +16,11 @@ const Navbar = () => {
           <li>FAQ's</li>
           <li>About HNG</li>
         </ul>
+        <div className="menu">
+          <img src={search} alt="" width={24} />
+          <img src={menu} alt="" width={24} />{" "}
+        </div>
+
         <div className="search">
           <img src={search} alt="" width={24} />
 

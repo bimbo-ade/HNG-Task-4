@@ -3,7 +3,6 @@ import { data } from "../data";
 import arrowup from "../assets/images/arrow-up.png";
 
 import arrowdown from "../assets/images/arrow-down.png";
-import { data2 } from "../data";
 
 const Questions = () => {
   const [open, setOpen] = useState(null);
