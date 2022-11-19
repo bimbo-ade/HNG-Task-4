@@ -41,7 +41,8 @@ body {
         margin-left: 8px;
       }
     }
-    @media (min-width: 768px) and (max-width: 950px) {
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: none;
     }
   }
   .search {
@@ -71,6 +72,9 @@ body {
         color: #c5c5c5;
       }
     }
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -86,24 +90,45 @@ body {
   margin-bottom: 72px;
   margin-top: 48px;
 
+  @media (min-width: 320px) and (max-width: 768px) {
+    align-items: flex-start;
+  }
+
   h4 {
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     color: #e7332b;
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
+
   h1 {
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
     margin: 16px 0;
     color: #1e2532;
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      font-size: 32px;
+      margin: 0;
+      line-height: 48px;
+    }
   }
+
   p {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
     color: #1e2532;
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
   }
 }
 
